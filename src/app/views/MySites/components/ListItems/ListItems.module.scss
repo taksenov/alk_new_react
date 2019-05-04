@@ -1,0 +1,71 @@
+// ListItems
+
+// Variables
+$gutter: 10px;
+// =========
+
+// Selectors
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.item {
+  background-color: azure;
+  height: 60px;
+  border: 1px solid #000000;
+  margin-right: $gutter;
+  margin-bottom: $gutter;
+}
+
+@media screen and (min-width: 1201px) {
+  .item {
+    $card-count: 3;
+    width: calc(100% / #{$card-count} - #{$gutter} * (#{$card-count} - 1) / #{$card-count} - #{$gutter});
+
+    &:nth-of-type(#{$card-count}n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .item {
+    $card-count: 3;
+    width: calc(100% / #{$card-count} - #{$gutter} * (#{$card-count} - 1) / #{$card-count} - #{$gutter});
+
+    &:nth-of-type(#{$card-count}n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 993px) {
+  .item {
+    $card-count: 2;
+    width: calc(100% / #{$card-count} - #{$gutter} * (#{$card-count} - 1) / #{$card-count} - #{$gutter});
+
+    &:nth-of-type(#{$card-count}n) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    flex: 1 1 450px;
+    width: unset;
+    margin-right: 0px;
+
+    &:nth-of-type(#{3}n) {
+      margin-right: 0px;
+    }
+  }
+}
+
+// =========
+
+// MediaQueries
+// ============

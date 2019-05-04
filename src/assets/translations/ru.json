@@ -1,0 +1,12 @@
+{
+  "app.notFoundPage": "Not found",
+  "core.system.offline.msg": "You are offline",
+  "core.system.offline.title": "Network status",
+  "core.system.update.available.msg": "App ready for update",
+  "core.system.update.available.btn": "Update",
+  "core.system.update.success.msg": "App is update",
+  "core.system.update.success.btn": "Reload page",
+  "core.system.update.error.msg": "Update failed",
+  "app.profile.reservations.numberOfSpaces":
+    "{val, number} {val, plural, one { рабочее место } few { рабочих места } many { рабочих мест } other { рабочих мест } }"
+}
