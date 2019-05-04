@@ -7,6 +7,5 @@
   "core.system.update.success.msg": "App is update",
   "core.system.update.success.btn": "Reload page",
   "core.system.update.error.msg": "Update failed",
-  "app.profile.reservations.numberOfSpaces":
-    "{val, number} {val, plural, one { рабочее место } few { рабочих места } many { рабочих мест } other { рабочих мест } }"
+  "app.profile.reservations.numberOfSpaces": "{val, number} {val, plural, one { рабочее место } few { рабочих места } many { рабочих мест } other { рабочих мест } }"
 }
