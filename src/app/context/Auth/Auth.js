@@ -23,26 +23,27 @@ class AuthProvider extends Component {
   checkAuth = () => {
     let user = {
       uid: {
-        someShit: getCookie(environment.SOME_SHIT_COOKIE_ID),
-        uniple: getCookie(environment.UNIPLE_COOKIE_ID),
+        someShit: 'getCookie(environment.SOME_SHIT_COOKIE_ID)',
+        uniple: 'getCookie(environment.UNIPLE_COOKIE_ID)',
       },
       token: {
-        someShit: getCookie(environment.SOME_SHIT_COOKIE_TOKEN),
-        uniple: getCookie(environment.UNIPLE_COOKIE_TOKEN),
+        someShit: 'getCookie(environment.SOME_SHIT_COOKIE_TOKEN)',
+        uniple: 'getCookie(environment.UNIPLE_COOKIE_TOKEN)',
       },
     };
 
-    if (environment.DEBUG) {
-      user.uid.someShit = String(environment.DEBUG_UID);
-      user.token.someShit = environment.DEBUG_SOME_SHIT_TOKEN;
-      user.token.uniple = environment.DEBUG_UNIPLE_TOKEN;
-    }
+    // if (environment.DEBUG) {
+    //   user.uid.someShit = String(environment.DEBUG_UID);
+    //   user.token.someShit = environment.DEBUG_SOME_SHIT_TOKEN;
+    //   user.token.uniple = environment.DEBUG_UNIPLE_TOKEN;
+    // }
 
-    if (!user.uid.someShit && !user.uid.uniple) {
-      this.setState({ authError: 'Access denied' });
-    } else {
-      this.setState({ isAuthorized: true, authError: '', user });
-    }
+    // if (!user.uid.someShit && !user.uid.uniple) {
+    //   this.setState({ authError: 'Access denied' });
+    // } else {
+    //   this.setState({ isAuthorized: true, authError: '', user });
+    // }
+    this.setState({ isAuthorized: true, authError: '', user });
   };
 
   getProviderValue = () => {

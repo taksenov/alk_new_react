@@ -6,7 +6,7 @@ import { environment } from '../../../../environment';
 // Load Mysites data
 export function* loadMySites(action: any) {
   const { userID, userToken: token } = action.payload;
-  const url = `${environment.LK_API_HOST}${API.mysites}${userID}`;
+  const url = ``;
   const params = { token };
 
   try {
